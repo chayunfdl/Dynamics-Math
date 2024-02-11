@@ -1,0 +1,11 @@
+{
+  "name": "dynamics-math",
+  "version": "1.0.0",
+  "description": "this repository for dynamics math at my thesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chayun",
+  "license": "ISC"
+}

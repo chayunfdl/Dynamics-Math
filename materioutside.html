@@ -1,121 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fungsi dalam Matematika</title>
-    <link rel="stylesheet" href="css/materioutside.css" />
-</head>
-<body>
 
-<div class="materi-outside-LsE" id="1:280">
-    <div class="group-519-MXS" id="1:282">
-        <div class="rectangle-328-TaU" id="1:283"></div>
-        <div class="blur-Mfr" id="1:284">
-            <div class="ellipse-155-rMi" id="1:286"></div>
-            <div class="ellipse-154-V9n" id="1:285"></div>
-        </div>
-        <img class="group-499-mNC" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:287"/>
-        <img class="group-498-gk4" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:295"/>
-        <div class="group-515-p5a" id="1:303">
-            <div class="ellipse-159-jCY" id="1:310"></div>
-            <div class="ellipse-158-rY4" id="1:309"></div>
-            <div class="ellipse-156-X8Q" id="1:308"></div>
-            <img class="sketch-annotation-element-stroke-abstract-highlight-bling-line-1-D1E" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:304"/>
-        </div>
-        <div class="frame-7-gvQ" id="1:311">
-            <div class="auto-group-wbt2-Rsz" id="YYiNZZB5mMdKK3i6URWbT2">
-                <div class="frame-5-kvG" id="1:316">
-                    <div class="frame-3-6DS" id="1:317">
-                        <img class="image-2-SYC" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:318"/>
-                        <div class="input-with-label-Gn8" id="1:321">
-                            <div class="input-aH2" id="1:323">
-                                <div class="content-uKJ" id="1:324">
-                                    <div class="auto-group-qq6u-s1E" id="YYiNq3jGYi4HfqXnBdQq6U">
-                                        <img class="search-zbe" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:325"/>
-                                        <p class="text-jJL" id="1:327">Want to learn?</p>
-                                    </div>
-                                    <div class="button-DzC" id="1:328">
-                                        <div class="button-base-zEG" id="1:329">
-                                            <p class="text-huN" id="1:330">Explore</p>
-                                            <img class="chevron-down-Qon" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:331"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="frame-4-DmE" id="1:333">
-                        <p class="home-xD2" id="1:334">Home</p>
-                        <p class="materi-Vik" id="1:335">Materi</p>
-                        <p class="ujian-FC8" id="1:336">Ujian</p>
-                        <p class="contact-us-b16" id="1:337">Contact us</p>
-                    </div>
-                </div>
-                <img class="desain-tanpa-judul-14-1-jNC" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:339"/>
+<head>
+    <title>Dynamics Math</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" <link
+        href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Logo</a>
             </div>
-            <div class="auto-group-orgu-TJC" id="YYiP7xQm9rws7eRWb5orGU">
-                <div class="heading-and-supporting-text-yGY" id="1:374">
-                    <p class="heading-sMv" id="1:376">Media Pembelajaran</p>
-                    <p class="supporting-text-yvk" id="1:377">Let&#39;s join our famous class, the knowledge provided will definitely be useful for you.</p>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">Home</a></li>
+                    <li><a href="#materi">Materi</a></li>
+                    <li><a href="#ujian">Ujian</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#profile"><img src="profile.png" alt="profile"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="materi" class="bg-1">
+        <div class="container">
+            <h3 class="text-justified">Materi Pembelajaran</h3>
+            <p class="text-center">Pilih materi pembelajaran yang kamu inginkan!</p>
+
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/relasi.png" alt="Relasi" width="400" height="300">
+                        <p><strong>Relasi</strong></p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Lihat</button>
+                    </div>
                 </div>
-                <div class="frame-403-7GG" id="1:340">
-                    <div class="blog-post-card-S3e" id="1:341">
-                        <img class="image-MgQ" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:342"/>
-                        <div class="heading-and-text-G2g" id="1:345">
-                            <div class="heading-and-icon-Dic" id="1:346">
-                                <p class="heading-MZv" id="1:347">Relasi</p>
-                                <img class="icon-wrap-5kp" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:348"/>
-                            </div>
-                            <p class="supporting-text-PmW" id="1:351">
-                                Peserta didik mampu memahami konsep, ciri-ciri, contoh, serta menyelesaikan permasalahan terkait relasi.
-                                <br/>
-                            </p>
-                        </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/relasi.png" alt="Fungsi" width="400" height="300">
+                        <p><strong>Fungsi</strong></p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Lihat</button>
                     </div>
-                    <div class="blog-post-card-FHv" id="1:352">
-                        <img class="image-Afn" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:353"/>
-                        <div class="heading-and-text-63e" id="1:356">
-                            <div class="heading-and-icon-FSL" id="1:357">
-                                <p class="heading-PHe" id="1:358">Fungsi</p>
-                                <img class="icon-wrap-vHa" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:359"/>
-                            </div>
-                            <p class="supporting-text-3NC" id="1:362">
-                                Peserta didik mampu memahami konsep, ciri-ciri, contoh, serta menyelesaikan permasalahan terkait fungsi.
-                                <br/>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog-post-card-TRv" id="1:363">
-                        <img class="image-Non" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:364"/>
-                        <div class="heading-and-text-g3n" id="1:367">
-                            <div class="heading-and-icon-2dS" id="1:368">
-                                <p class="heading-ZtG" id="1:369">Korespondensi Satu-satu</p>
-                                <img class="icon-wrap-WYc" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:370"/>
-                            </div>
-                            <p class="supporting-text-r6g" id="1:373">Peserta didik mampu memahami konsep, ciri-ciri, contoh, serta menyelesaikan permasalahan terkait korespondensi satu-satu.</p>
-                        </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/relasi.png" alt="Korespondensi Satu-satu" width="400" height="300">
+                        <p><strong>Korespondensi Satu-satu</strong></p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Lihat</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-u4x" id="1:379">
-        <div class="section-oAL" id="1:380">
-            <div class="logo-and-supporting-text-Mhe" id="1:383">
-                <img class="image-2-J76" src="/api/try-prod-ap-southeast-1-first-cluster/project..." id="1:384"/>
-                <p class="supporting-text-SDJ" id="1:385">Top e-learning yang membuat talenta matematikawan di seluruh dunia.</p>
-            </div>
-            <div class="section-yU8" id="1:386">
-                <p class="footer-text-KXz" id="1:389">
-                    chaiiii.0110@gmail.com
-                    <br/>
-                    © 2024 Chayun Fadila. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <img src="assets/img/logo.png" alt="DynamicsMath">
+                    <p>Top e-learning yang membuat talenta matematikawan di seluruh dunia.</p>
+                    <p>chaiiii.0110@gmail.com</p>
+                    <p>Copyright Dynamics Math. All Right Reserved.</p>
+                </div>
+        </footer>
+        <!-- End  Footer -->
 
 </body>
+
 </html>

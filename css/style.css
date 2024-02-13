@@ -21,15 +21,6 @@ body {
   .person:hover {
     border-color: #fff;
   }
-  .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
-    width: 70%;
-    margin: auto;
-  }
-  .carousel-caption h3 {
-    color: #000 !important;
-  }
   @media (max-width: 600px) {
     .carousel-caption {
       display: none;

@@ -362,3 +362,13 @@ span.validate-tooltip {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
+.user-img img {
+  border-color: #fff;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  /*z-index: 100;*/
+}

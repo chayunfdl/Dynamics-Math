@@ -49,16 +49,9 @@
   </nav>
 
   <div class="container">
-    <div class="ujian">
-      <div class="row pt-5 mt-5 mb-5 px-5 py-5 d-flex justify-content-between align-items-center">
-        <div class="col-md-6 mb-3">
-          <h3 class="display-4 fw-bold text-success">Ujian</h3>
-          <h3 class="display-6 mb-3">Materi Relasi dan Fungsi</h3>
-          <button type="submit" id="ujian" style="border-radius: 10px; width: 5rem;">Mulai</button>
-        </div>
-        <div class="col-md-6 mb-3">
-          <img src="./assets/images/ujian.png" class="img-responsive" alt=""></div>
-      </div>
+    <div class="ujian mt-5 mb-5 pt-5 pb-5">
+      <button type="submit" id="examp" style="border-radius: 10px; width: 5rem;">Selesai</button>
+
     </div>
   </div>
 
@@ -101,21 +94,16 @@
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
   <script src="./assets/js/script.js"></script>
-  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
-    const btn = document.getElementById('hub');
+    const btn = document.getElementById('examp');
     btn.addEventListener('click', function () {
       Swal.fire({
-        title: 'Pendapat Anda Akan Kami Simpan?',
-        showCancelButton: true,
-        confirmButtonText: 'Simpan',
-        cancelButtonText: 'Batal'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire('Terima Kasih telah  menghubungi kami👍', '', 'success')
-        }
-      })
-    })
+        title: "Good job!",
+        text: "Ujian telah diselesaikan!",
+        icon: "success"
+      });
+    });
   </script>
 
 

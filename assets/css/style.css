@@ -44,6 +44,26 @@ body.sign {
   float: right;
 }
 
+.navbar.fixed-top {
+  position: sticky;
+  top: 0;
+  background: #fff; 
+  z-index: 100;
+}
+
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
 /*.clearfix:after {
   visibility: hidden;
   display: block;

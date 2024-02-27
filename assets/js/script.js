@@ -78,3 +78,4 @@ function togglePasswordVisibility() {
     toggleIcon.classList.add("bi-eye");
   }
 }
+

@@ -2,81 +2,129 @@
 <html lang="en">
 
 <head>
-    <title>Dynamics Math</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" <link
-        href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstr ap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://srv.buysellads.com/ads/CESI627W.json?callback=customJSONPCallback"></script>
+  <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light shadow fixed-top">
+    <div class="container d-flex bd-highlight">
+      <a class="navbar-brand" href="./index.html"><img class="img-fluid" src="assets/theme/Jenusa.png" alt="...">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">Materi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Ujian</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-profile justify-content-end"><a href=""><img src="assets/theme/Jenusa.png" alt="..."></a></div>
+    </div>
+  </nav>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage">Logo</a>
+  <div id="materi" class="bg-1">
+    <div class="container">
+        <h3 class="text-justified">Materi Pembelajaran</h3>
+        <p class="text-center">Pilih materi pembelajaran yang kamu inginkan!</p>
+        
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="img/relasi.png" alt="Relasi" class="card-img-top" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Relasi</strong></h3>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Lihat</button>
+                    </div>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#myPage">Home</a></li>
-                    <li><a href="#materi">Materi</a></li>
-                    <li><a href="#ujian">Ujian</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#profile"><img src="profile.png" alt="profile"></a></li>
-                </ul>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="img/relasi.png" alt="Fungsi" class="card-img-top" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Fungsi</strong></h3>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Lihat</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="img/relasi.png" alt="Korespondensi Satu-satu" class="card-img-top" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Korespondensi Satu-satu</strong></h3>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Lihat</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</div>
 
-    <div id="materi" class="bg-1">
-        <div class="container">
-            <h3 class="text-justified">Materi Pembelajaran</h3>
-            <p class="text-center">Pilih materi pembelajaran yang kamu inginkan!</p>
-
-            <div class="row text-center">
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img/relasi.png" alt="Relasi" width="400" height="300">
-                        <p><strong>Relasi</strong></p>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Lihat</button>
-                    </div>
+  <footer>
+    <div class="footer container-fluid position-relative bg-light-radial text-white-50 bg-dark mt-5">
+      <div class="container">
+        <div class="row featurette g-5">
+          <div class="col-md-4 justify-content-start">
+            <div class="row featurette g-5">
+              <div class="col-lg-12">
+                <h4 class="text-white text-uppercase mb-3">Information</h4>
+                <div class="d-flex flex-column">
+                  <p>Top e-learning yang membuat talenta matematikawan di seluruh dunia.</p>
+                  <p><i class="fa fa-map-marker-alt me-2"></i>Semarang, Jawa Tengah, Indonesia
+                  </p>
+                  <p><i class="fa fa-envelope me-2 mb-4"></i>chaiiii.0110@gmail.com</p>
                 </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img/relasi.png" alt="Fungsi" width="400" height="300">
-                        <p><strong>Fungsi</strong></p>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Lihat</button>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img/relasi.png" alt="Korespondensi Satu-satu" width="400" height="300">
-                        <p><strong>Korespondensi Satu-satu</strong></p>
-                        <button class="btn" data-toggle="modal" data-target="#myModal">Lihat</button>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-light-radial text-white border-top border-success px-0 bg-dark">
+      <div class="d-flex flex-column flex-md-row featurette justify-content-center">
+        <div class="py-4 px-5 text-center text-md-center">
+          <p class="mb-0">Copyright &copy; <span class="text-success" href="">Dynamics Math All Right Reserved
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="footer-top">
-                <div class="container">
-                    <img src="assets/img/logo.png" alt="DynamicsMath">
-                    <p>Top e-learning yang membuat talenta matematikawan di seluruh dunia.</p>
-                    <p>chaiiii.0110@gmail.com</p>
-                    <p>Copyright Dynamics Math. All Right Reserved.</p>
-                </div>
-        </footer>
-        <!-- End  Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
 
 </body>
 

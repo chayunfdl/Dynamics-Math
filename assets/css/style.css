@@ -14,6 +14,7 @@ body {
   background: #fff;
   color: #fff;
   scroll-behavior: smooth;
+  line-height: 2 !important;
 }
 
 body.sign {
@@ -24,12 +25,17 @@ body.sign {
   background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(19, 80, 88, 0.5) 100%);
   background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(19, 80, 88, 0.5) 100%);
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(19, 80, 88, 0.5) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1f2b5', endColorstr='#135058', GradientType=1);
+  filter: ;
+  progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1f2b5', endColorstr='#135058', GradientType=1);
+  -webkit-filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1f2b5', endColorstr='#135058', GradientType=1);
 }
 
 .animate {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 
 .text-center {
@@ -47,7 +53,7 @@ body.sign {
 .navbar.fixed-top {
   position: sticky;
   top: 0;
-  background: #fff; 
+  background: #fff;
   z-index: 100;
 }
 
@@ -307,6 +313,11 @@ span.validate-tooltip {
   color: #fff;
 }*/
 
+.card-inverse {
+  max-width: 100% !important;
+  height: auto;
+}
+
 @media only screen and (max-width: 768px) {
   .direction {
     position: static;
@@ -322,11 +333,28 @@ span.validate-tooltip {
   .direction {
     position: static;
   }
+
+  .card-inverse {
+    max-width: 30rem !important;
+    ;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .direction {
     position: static;
+  }
+
+  .card-inverse {
+    max-width: 28rem !important;
+    ;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .card-inverse {
+    max-width: 20rem !important;
+    height: auto;
   }
 }
 
@@ -344,13 +372,11 @@ span.validate-tooltip {
 /* Gaya tambahan untuk ikon mata (eye) ketika input dalam fokus */
 .input-group.focused .toggle-password {
   color: #00A885;
-  /* Ubah warna ikon saat input dalam fokus */
 }
 
 /* Gaya tambahan untuk ikon mata (eye) ketika diklik */
 .toggle-password:active {
   color: #00755d;
-  /* Ubah warna ikon saat diklik */
 }
 
 .img-responsive {

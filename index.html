@@ -35,13 +35,13 @@
             <a class="nav-link  active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog.html">Materi</a>
+            <a class="nav-link" href="materioutside.html">Materi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Ujian</a>
+            <a class="nav-link" href="ujian.html">Ujian</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -59,7 +59,7 @@
           <p class="text-muted">Selamat datang di Math Edu, tempat paling keren di web untuk belajar tentang relasi dan
             fungsi. Dibuat dari pikiran para ahli matematika jenius, ini adalah sumber daya terbaik untuk siswa sekolah
             menengah pertama!</p>
-          <button type="submit" id="#" style="border-radius: 10px; width: 8rem;">Login</button>
+          <a href="signin.html"><button type="submit" id="#" style="border-radius: 10px; width: 8rem;">Login</button></a>
 
         </div>
         <div class="col-md-6 right-content"><img src="./assets/images/hero.png" class="img-fluid" alt=""></div>
@@ -144,22 +144,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
   <script src="./assets/js/script.js"></script>
   <script src="js/sweetalert2.all.min.js"></script>
-  <script>
-    const btn = document.getElementById('hub');
-    btn.addEventListener('click', function () {
-      Swal.fire({
-        title: 'Pendapat Anda Akan Kami Simpan?',
-        showCancelButton: true,
-        confirmButtonText: 'Simpan',
-        cancelButtonText: 'Batal'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire('Terima Kasih telah  menghubungi kami👍', '', 'success')
-        }
-      })
-    })
-  </script>
-
 
 </body>
 

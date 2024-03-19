@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  math-db:
+    container_name: math-db
+    networks:
+      - math-edu
+    image: mysql:5.7
+    restart: unless-stopped
+    ports:
+      - 3307:3306
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: math_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+      TZ: Asia/Jakarta
+
+networks:
+  math-edu:
+
+volumes:
+  dbdata:

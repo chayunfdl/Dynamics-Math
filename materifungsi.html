@@ -60,10 +60,12 @@
         <div class="row">
       <div class="col-12 col-md-4 col-xl-3">
         <ul class="m-2 px-4 py-3 sticky-top border rounded" style="top: 5rem;">
-          <li><a href="#definisi-fungsi">Apa itu fungsi?</a></li>
-          <li><a href="#pentingnya-fungsi">Kenapa fungsi penting?</a></li>
-          <li><a href="#ciri-fungsi">Bagaimana ciri-ciri dari suatu fungsi?</a></li>
+          <li><a href="#definisi-fungsi">Apa itu fungsi</a></li>
+          <li><a href="#pentingnya-fungsi">Kenapa fungsi penting</a></li>
+          <li><a href="#ciri-fungsi">Bagaimana ciri-ciri dari suatu fungsi</a></li>
           <li><a href="#menyatakan-fungsi">Bagaimana menyatakan suatu fungsi</a></li>
+          <li><a href="#menentukan-banyak-pemetaan">Bagaimana menentukan banyaknya pemetaan atau fungsi</a></li>
+          <li><a href="#menentukan-nilai-fungsi">Bagaimana cara menentukan nilai fungsi</a></li>
         </ul>
       </div>
       <div class="col-12 col-md-8 col-xl-9 order-md-first">
@@ -71,7 +73,31 @@
           Apa itu fungsi?
         </h3>
         <p>
-          <strong>Fungsi</strong> adalah relasi khusus yang menghubungkan setiap anggota daerah asal dengan tepat satu anggota daerah kawan.
+          <strong>Fungsi</strong> adalah suatu aturan relasi atau korespondensi yang menghubungkan setiap objek 𝑥
+          dalam satu himpunan (domain), dengan sebuah nilai tunggal 𝑓(𝑥) dari suatu himpunan kedua
+          (kodomain). Fungsi dari himpunan A ke himpunan B dinotasikan dengan 𝑓: 𝐴 → 𝐵 ( 𝑓
+          memetakan anggota himpunan A ke anggota himpunan B). Jika 𝑓 sebuah fungsi dari himpunan
+          A ke himpunan B dengan 𝑥 ∈ 𝐴 dan 𝑦 ∈ 𝐵 maka peta 𝑥 oleh 𝑓 adalah 𝑦 yang dinyatakan
+          dengan 𝑓(𝑥). Dengan demikian, diperoleh rumus fungsi sebagai berikut.<br>
+          𝑓𝑥 → 𝑦 𝑎𝑡𝑎𝑢 𝑓: 𝑥 → 𝑔(𝑥)<br>
+          Misalnya, relasi nilai ulangan matematika 5 siswa kelas VIII seperti pada diagram panah di
+          bawah ini.<br>
+          <img src="./assets/images/apa-itu-fungsi.png" alt="apa-itu-fungsi" width="300"><br>
+          Pada relasi tersebut terlihat bahwa setiap anggota himpunan A mempunyai pasangan tepat satu
+          pada himpunan B. Sehingga, <strong>relasi antara himpunan A dan himpunan B</strong> ini dikenal <strong>sebagai</strong>
+          pemetaan atau <strong>fungsi</strong>.<br>
+          Pada diagram panah tersebut himpunan A = {Alex, Brian, Chris, Dean, Eric} disebut sebagai
+          <strong>domain</strong>. Himpunan B = {6,7,8,9,10} disebut <strong>kodomain</strong>. Himpunan {6,7,8,9,10} yang
+          merupakan pasangan anggota daerah asal disebut <strong>range</strong> (daerah asal).<br>
+          Selain contoh di atas, masih banyak contoh fungsi yang dapat memberikan kalian pemahaman
+          yang lebih mengenai fungsi. Salah satunya,<br>
+          𝐴 = {(1, 1), (2, 4), (3, 6), (4, 7), (5, 8)}<br>
+          𝐵 = {(1, 6), (2, 7), (2, 8), (3, 9), (4, 10)}<br>
+          Berdasarkan, definisi dari himpunan A merupakan fungsi, sedangkan himpunan B bukan
+          merupakan fungsi. Hal ini dikarenakan setiap domain himpunan A memasangkan tepat satu
+          dengan sebuah nilai tunggal di kodomain. Namun, hal yang berbeda untuk satu nilai domain
+          pada himpunan 𝐵 yang mempunyai dua anggota di kodomain. Sehingga himpunan B tidak
+          sesuai dengan definisi fungsi.
         </p>
 
         <h3 id="pentingnya-fungsi">
@@ -89,126 +115,168 @@
         <p>
           Mari kita ketahui apa saja <strong>ciri-ciri fungsi</strong>:<br>
           • Himpunan A dan himpunan B <strong>bukan himpunan kosong</strong>.<br>
+          <strong>Himpunan kosong</strong> adalah himpunan yang <strong>tidak memiliki anggota apa pun</strong>, dan sering 
+          dilambangkan dengan { }. Misalnya, himpunan A adalah himpunan bilangan prima antara
+          20 dan 30. Sebab, tidak memiliki anggota karena tidak ada bilangan prima di dalam rentang
+          tersebut, sehingga dapat dituliskan menjadi himpunan A = { }.<br>
           • Pasangan setiap anggota himpunan A <strong>tidak boleh lebih dari satu</strong>.<br>
+          Misalnya, relasi 𝑆 = {(1,2), (2,3), (1,3)} bukanlah sebuah fungsi, karena tidak memenuhi
+          aturan tersebut karena anggota himpunan A yaitu 1 memiliki 2 pasangan kodomain. Jadi,
+          setiap anggota dari domain <strong>hanya dapat dipasangkan dengan satu anggota lainnya</strong>, dan
+          tidak boleh ada pasangan duplikat.<br>
           • Setiap anggota himpunan A <strong>harus mempunyai pasangan</strong> di himpunan B.<br>
-          • Anggota <strong>himpunan B</strong> boleh tidak mempunyai pasangan di A atau mempunyai <strong>pasangan lebih dari satu</strong>.
+          Misalnya, jika kita memiliki himpunan A = {1,2,3} dan himpunan B = {a,b,c} dan memiliki
+          fungsi 𝑓 = {(1, 𝑎), (2, 𝑏), (3, 𝑐)}. Jadi, setiap anggota himpunan A memiliki satu pasangan
+          di himpunan B.<br>
+          • Anggota <strong>himpunan B</strong> boleh tidak mempunyai pasangan di A atau mempunyai <strong>pasangan lebih dari satu</strong>.<br>
+          Misalnya, relasi dari himpunan A = {1,2,3} ke himpunan B = {a,b,c} adalah 𝑆 = {(1, 𝑎), (2, 𝑎), (3, 𝑐)}
         </p>
-        <p>
-          Perlu kalian ketahui, dalam konteks fungsi dari himpunan A ke himpunan B, maka <strong>himpunan A disebut
-            domain
-            (daerah asal)</strong> dan <strong>himpunan B disebut kodomain (daerah kawan).</strong> Sedangkan himpunan
-          bagian dari himpunan B yang semua <strong>anggotanya mendapat pasangan</strong> di anggota <strong>himpunan A
-            disebut range (daerah hasil).</strong>
-        </p>
-        <p>
-          <strong>Perhatikan contoh di bawah ini!</strong><br>
-        </p>
-        <p>
-          <strong>Misalkan:</strong><br>
-          A = {2, 4, 6, 8, 10, 12, 14, 16}<br>
-          B = {1, 5, 9}<br>
-          Relasi yang didefinisikan adalah "anggota A dua kali anggota B”. Apakah relasi dari A ke B termasuk
-          fungsi?<br>
-        </p>
-        <p>
-          <strong>Penyelesaian:</strong><br>
-          Untuk mengetahui apakah relasi dari A ke B <strong>termasuk fungsi atau bukan</strong>, lakukan prosedur
-          berikut.<br>
-          Diketahui relasi dari A ke B adalah <strong>anggota A dua kali anggota B</strong><br>
-          Maka dapat dituliskan dalam bentuk pasangan berurutan sebagai berikut: {(2, 1), (10, 5)}<br>
-        </p>
-        <p>
-          Coba kita perhatikan kembali beberapa anggota A lainnya yang tidak mempunyai pasangan ke B, yakni:<br>
-          Beberapa anggota A yang <strong>tidak mempunyai pasangan </strong> di B adalah 4, 6, 8, 12, 14, dan 16.<br>
-          Hal ini karena tidak ada bilangan x di B demikian sehingga <strong>“4 dua kali anggota B”</strong>, <strong>“6 dua kali anggota B”</strong>, <strong>“8
-          dua
-          kali anggota B”</strong>, <strong>“12 dua kali anggota B”</strong>, <strong>“14 dua kali anggota B”</strong>, dan <strong>“16 dua kali anggota B”</strong>.
-        </p>
-
-        <h3 id="menyatakan-fungsi">
+        
+        <h3 id="menyatakan-fungsi?">
           Bagaimana menyatakan suatu fungsi?
         </h3>
         <p>
-          Sejauh berapa kilometer yang dibutuhkan untuk uang sebesar Rp154.500,00. Jika ketentuan tarif yang diberlakukan oleh perusahaan taksi:<br>
-          1. Biaya tarif awal sebesar Rp7.500,00 dan tarif per kilometer sebesar Rp3.000,00.<br>
-          2. Berapa besar tarif yang dibutuhkan untuk perjalanan sejauh 20 km, 25 km, 30 km?<br>
-          3. Dapatkah kalian menetapkan tarif untuk perjalanan sejauh 36 km?<br>
-          Sehingga <strong>hitungan aritmetika</strong>:<br>
-          Untuk biaya 20 km = Rp7.500,00 + 20 × Rp3.000,00 = Rp67.500,00<br>
-          Untuk biaya 25 km = Rp7.500,00 + 25 × Rp3.000,00 = Rp82.500,00<br>
-          Untuk biaya 30 km = Rp7.500,00 + 30 × Rp3.000,00 = Rp97.500,00<br>
+          Cara penyajian fungsi seperti cara penyajian relasi. Suatu fungsi dapat disajikan dalam bentuk
+          diagram panah, diagram kartesius, dan himpunan pasangan terurut.<br>
+          Misalkan A = {1,2,3,4} dan B = {2,5,7,10,13,17}. Jika fungsi 𝑓 dari A ke B adalah 𝑓: 𝑥 → 𝑥2 +
+          +1, 𝑥 ∈ 𝑃, nyatakan fungsi 𝑓 dalam:<br>
+          a. Diagram panah<br>
+          b. Diagram kartesius<br>
+          c. Himpunan pasangan berurutan<br>
+          Penyelesaian:<br>
+          𝑓: 𝑥 → 𝑥2 + 1<br>
+          Daerah asal = {1,2,3,4}<br>
+          𝑓(1) = 12 + 1 = 2; 𝑓(2) = 22 + 1 = 5; 𝑓(3) = 32 + 1 = 10; 𝑓(4) = 42 + 1 = 17<br>
+          Daerah hasil = {2,5,10,17}<br>
+          a. Diagram panah<br>
+          <img src="./assets/images/menyatakan-suatu-fungsi.png" alt="menyatakan suatu fungsi" width="300"><br>
+          b. Diagram kartesius<br>
+          <img src="./assets/images/menyatakan-suatu-fungsi-2.png" alt="menyatakan suatu fungsi 2" width="150"><br>
+          c. Himpunan pasangan berurutan<br>
+          Himpunan pasangan terurut dari fungsi 𝑓 = {(1,2), (2,5), (3,10), (4,17)}
         </p>
+
+        <h3 id="menentukan-banyak-pemetaan">
+          Bagaimana menentukan banyaknya pemetaan atau fungsi?
+        </h3>
         <p>
-          Bagaimanakah cara kalian <strong>menentukan rumus fungsinya</strong>?<br>
-          Misalkan suatu fungsi f diterapkan dari himpunan P = {1, 2, 3, 4, 5} ke himpunan Q = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. "setengah kali dari" merupakan relasi yang ditentukan.
-        </p>
-        <p>
-          <strong>Cara 1: Diagram Panah</strong><br>
-          Apabila <strong>"setengah kali dari"</strong> adalah relasi yang ditentukan, maka diagram berikut ini merupakan cara yang dapat digunakan untuk hubungan tersebut.<br>
-        <strong>GAMBARRR!!!</strong>
-        </p>
-        <P>
-          <strong>Cara 2: Himpunan Pasangan Berurutan</strong><br>
-          Apabila "setengah kali dari" adalah relasi yang ditentukan, maka himpunan pasangan berikut ini merupakan cara yang dapat digunakan untuk hubungan tersebut.<br>
-          𝑓 = {(1,2), (2,4), (3,6), (4,8), (5,10)}
-        </P>
-        <p>
-          <strong>Cara 3: Persamaan Fungsi</strong><br>
-          Perhatikan pola berikut untuk direpresentasikan menggunakan rumus fungsi. Himpunan pasangan berurutan dari {(1, 2),(2, 4),(3, 6),(4, 8),(5, 10)} dapat membentuk menjadi pola matematika sebagai berikut.<br>
-          (1, 2) menjadi (1,2 × 1)<br>
-          (2, 4) menjadi (2,2 × 2)<br>
-          (3, 6) menjadi (3,2 × 3)<br>
-          (4, 8) menjadi (4,2 × 4)<br>
-          (5, 10) menjaid (5,2 × 5)
-        </p>
-        <p>
-          <strong>Cara 4: Tabel</strong><br>
-          Apabila "setengah kali dari" adalah relasi yang ditentukan, maka tabel berikut ini merupakan cara yang dapat digunakan untuk hubungan tersebut.<br>
+          Banyaknya pemetaan atau fungsi dari dua buah himpunan ini dapat ditentukan. Berikut ini
+          bagaimana cara menentukan banyaknya sebuah fungsi.<br>
+          Misal himpunan A = {a} dan B = {1}, banyaknya pemetaan dari A ke B adalah 1.<br>
+          <img src="./assets/images/menentukan-banyak-fungsi.png" alt="menentukan banyak fungsi" width="150"><br>
+          Misal himpunan A = {a} dan B = {1,2}, banyaknya pemetaan dari A ke B adalah 2.<br>
+          <img src="./assets/images/menentukan-banyak-fungsi-2.png" alt="menentukan banyak fungsi 2" width="150">
+          <img src="./assets/images/menentukan-banyak-fungsi-2.png" alt="menentukan banyak fungsi 2" width="150"><br>
+          Misal himpunan A = {a} dan B = {1,2,3}, banyaknya pemetaan dari A ke B adalah 3.<br>
+          <img src="./assets/images/menentukan-banyak-fungsi-3.png" alt="menentukan banyak fungsi 3" width="150">
+          <img src="./assets/images/menentukan-banyak-fungsi-3.png" alt="menentukan banyak fungsi 3" width="150">
+          <img src="./assets/images/menentukan-banyak-fungsi-3.png" alt="menentukan banyak fungsi 3" width="150"><br>
+          Misal himpunan A = {a,b} dan B = {1}, banyaknya pemetaan dari A ke B adalah 1.<br>
+          <img src="./assets/images/menentukan-banyak-fungsi-4.png" alt="menentukan banyak fungsi 4" width="150"><br>
+          Misal himpunan A = {a,b} dan B = {1,2}, banyaknya pemetaan dari A ke B adalah 4.<br>
+          <img src="./assets/images/menentukan-banyak-fungsi-5.png" alt="menentukan banyak fungsi 5" width="150">
+          <img src="./assets/images/menentukan-banyak-fungsi-5.png" alt="menentukan banyak fungsi 5" width="150">
+          <img src="./assets/images/menentukan-banyak-fungsi-5.png" alt="menentukan banyak fungsi 5" width="150">
+          <img src="./assets/images/menentukan-banyak-fungsi-5.png" alt="menentukan banyak fungsi 5" width="150"><br>
+          Jika hasil tersebut dimasukkan dalam tabel, maka diperoleh hasil berikut ini!<br>
           <table class="table table-bordered">
             <tbody>
               <tr>
-                <td>x</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
+                <td><strong>Banyaknya himpunan A</strong></td>
+                <td><strong>Banyaknya himpunan B</strong></td>
+                <td><strong>Banyaknya pemetaan yang mungkin dari A ke B</strong></td>
               </tr>
               <tr>
-                <td>f(x)</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1 = 1^1</td>
+              </tr>
+              <tr>
+                <td>1</td>
                 <td>2</td>
-                <td>4</td>
-                <td>6</td>
-                <td>8</td>
-                <td>10</td>
+                <td>2 = 2^1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>3 = 3^1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>1</td>
+                <td>1 = 1^2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>4 = 2^2</td>
+              </tr>
+              <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td>m</td>
+                <td>n</td>
+                <td>n^m</td>
               </tr>
             </tbody>
-          </table>
+          </table><br>
+          Dari tabel diatas, disimpulkan bahwa jika banyak anggota himpunan 𝐴 = 𝑚 dan banyak
+          anggota himpunan 𝐵 = 𝑛, maka banyaknya pemetaan dari A ke B adalah 𝑛^𝑚
         </p>
+
+        <h3 id="menentukan-nilai-fungsi">
+          Bagaimana cara menentukan nilai fungsi?
+        </h3>
         <p>
-          <strong>Cara 5: Grafik</strong><br>
-          Apabila "setengah kali dari" adalah relasi yang ditentukan, maka graik berikut ini merupakan cara yang dapat digunakan untuk hubungan tersebut.<br>
-          <strong>GRAFIKKK</strong>
+          Setiap nilai yang berada dalam daerah asal jika dimasukkan ke dalam sebuah fungsi 𝑓 maka
+          akan diperoleh nilai fungsi yang merupakan daerah hasilnya. Perhatikan contoh berikut ini!
+          Sebuah fungsi 𝑓 dari himpunan A ke B adalah sebagai berikut!<br>
+          𝑓(𝑥) = −2𝑥 + 5, 𝑥 ∈ 𝐴 . Jika 𝐴 = {−2, −1,0,1,2} . Tentukanlah nilai-nilai fungsi, tabel, dan
+          juga grafik!<br>
+          Penyelesaian:<br>
+          • 𝑓(−2) = −2(−2) + 5 = 4 + 5 = 9<br>
+          • 𝑓(−1) = −2(−1) + 5 = 2 + 5 = 7<br>
+          • 𝑓(0) = −2(0) + 5 = 0 + 5 = 5<br>
+          • 𝑓(1) = −2(1) + 5 = −2 + 5 = 3<br>
+          • 𝑓(2) = −2(2) + 5 = −4 + 5 = 1<br>
+          Maka tabel fungsinya sebagai berikut.<br>
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>𝑥</td>
+                <td>-2</td>
+                <td>-1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>𝑓(𝑥)</td>
+                <td>9</td>
+                <td>7</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table><br>
+          Setelah mendapatkan nilai fungsi 𝑓 dan tabel fungsinya, kita dapat gambarkan menggunakan
+          sebuah grafik. Maka, grafik dari tabel fungsi yang sudah didefinisikan sebelumnya sebagai
+          berikut.<br>
+          <img src="./assets/images/menentukan-nilai-fungsi.png" alt="menentukan nilai fungsi" width="250"><br>
+          Selain itu, terdapat pula cara menentukan sebuah nilai fungsi apabila variabelnya berubah.
+          Misalnya, apabila terdapat fungsi 𝑓(𝑥) = 2𝑥 − 1 , tentukan nilai dari fungsi 𝑓(𝑥 + 1) dan
+          𝑓(𝑥2)!<br>
+          Penyelesaiaan:<br>
+          • 𝑓(𝑥 + 1) = 2(𝑥 + 1) − 1 = 2𝑥 + 2 − 1 = 2𝑥 + 1<br>
+          • 𝑓(𝑥2) = 2𝑥2 − 1
         </p>
-        <P>
-          Berdasarkan pembahasan sebelumnya, terdapat lima cara untuk menyatakan suatu fungsi dari himpunan P ke Q. Selanjutnya, kembali ke permasalahan awal penentuan rumus fungsi untuk masalah tarif taksi.<br>
-          Beberapa harga sewa taksi telah disampaikan sebelumnya, selanjutnya akan ditunjukkan lebih rinci seperti uraian berikut ini.<br>
-          Besar biaya untuk 20 km = Rp7.500,00 + 20 × Rp3.000,00 = Rp67.500,00<br>
-          Besar biaya untuk 25 km = Rp7.500,00 + 25 × Rp3.000,00 = Rp82.500,00<br>
-          Besar biaya untuk 30 km = Rp7.500,00 + 30 × Rp3.000,00 = Rp97.500,00<br>
-          Cobalah perhatikan dengan cermat terhadap angka yang muncul di setiap persamaan berikut:<br>
-          Besar biaya untuk 20 km = Rp7.500,00 + 20 × Rp3.000,00<br>
-          Besar biaya untuk 25 km = Rp7.500,00 + 25 × Rp3.000,00<br>
-          Besar biaya untuk 30 km = Rp7.500,00 + 30 × Rp3.000,00<br>
-          Perhatikan angka 20 di sebelah kiri dan angka 20 di sebelah kanan. Apa persamaan dan perbedaannya?<br>
-          Perhatikan angka 7500 di sebelah kanan!<br>
-          Jika 𝐵(𝑥) adalah tarif naik taksi untuk 𝑥 kilometer, maka 𝐵(𝑥) dapat dinyatakan sebagai persamaan 𝐵(𝑥) = 3000𝑥 + 7500.
-        </P>
-      </div>
-    </div>
 
     <fieldset id="question" class="border rounded p-4 pt-0 my-4" x-data="{ answer: null, showAnswer: false }">
-      <legend class="float-none w-auto fs-6 text-body-secondary">Quiz!</legend>
+      <legend class="float-none w-auto fs-6 text-body-secondary"><strong>Quiz!</strong></legend>
       <p>
         Daerah asal fungsi f dari x ke 2x - 1 adalah {𝑥| − 1 ≤ 𝑥 < 2, 𝑥 ∈ 𝑅} . Tentukanlah daerah hasilnya!
       </p>
@@ -232,7 +300,7 @@
         <button class="btn btn-danger mt-4">Jawaban Salah!</button>
       </template>
     </fieldset>
-</div>
+</div><br><br>
 
   <footer>
     <div class="footer container-fluid position-relative bg-light-radial text-white-50 bg-dark mt-5">

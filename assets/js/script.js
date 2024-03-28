@@ -43,6 +43,42 @@
     }
   });
 
+  //fetch API
+  function loginUser(email, password) {
+    fetch('https://be-dynamics-math-production.up.railway.app/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password
+      })
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Handle login success
+      console.log(data);
+    })
+    .catch(error => {
+      // Handle errors
+      console.error('There was a problem with the fetch operation:', error);
+    });
+  }
+
+  // event listener for form submission
+  $('#formvalidate').submit(function(event) {
+    event.preventDefault(); // Prevent default form submission
+    var email = $('#userName').val();
+    var password = $('#userPassword').val();
+    loginUser(email, password); // Call the login function with email and password
+  });
+
 }(jQuery);
 
 //$(document).ready(function () {
